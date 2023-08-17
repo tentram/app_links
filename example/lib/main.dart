@@ -41,10 +41,10 @@ class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   final _navigatorKey = GlobalKey<NavigatorState>();
   late AppLinks _appLinks;
   StreamSubscription<Uri>? _linkSubscription;
@@ -144,7 +144,7 @@ class _MyAppState extends State<MyApp> {
   Widget customScreen(String bookId) {
     return Scaffold(
       appBar: AppBar(title: const Text('Second Screen')),
-      body: Center(child: Text('Opened with parameter: ' + bookId)),
+      body: Center(child: Text('Opened with parameter: $bookId')),
     );
   }
 
