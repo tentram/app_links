@@ -1,3 +1,9 @@
+## 3.4.5
+* fix(Android): Code improvements and correctly skip event firing when comming from history.
+
+## 3.4.4
+* fix: Add missing `allUriLinkStream` and `allStringLinkStream` methods web platform.
+
 ## 3.4.3
 * chore: Add support for Flutter 3.10.
 * chore(Android): Add support for AGP 8.0.
